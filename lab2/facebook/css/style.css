@@ -1,0 +1,225 @@
+body{
+    background-color:  #f0f2f5;;
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+}
+
+.MyImage{
+    width: 278px;
+}
+
+#facebook{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.logo__wrapper{
+    max-width: 50%;
+}
+
+.main_block{
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    
+    /* чтобы между элементами было максимальное расстояние, чтобы элементы разошлись по краям */
+
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a { 
+    color: black;
+    font-family: Sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+
+}
+
+/* При наведении - подчеркивание */
+a:hover {
+    text-decoration: underline;
+}
+
+#text-link{
+    color: black;
+    font-family: Sans-serif;
+    font-size: 13px;
+    text-decoration: none; /* underlying*/
+
+}
+
+footer {
+    background-color: rgb(255, 255, 255); /* для фона футера*/
+}
+
+.text-link{
+    text-align: center;  /*выравнивает текст по центру внутри блока*/
+    margin-top: 35px;
+    font-size: 14.5px;
+    color: #424447;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;;
+
+}
+.text-link a{    /* Устанавливает размер шрифта для всех ссылок внутри элементов с классом */
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1c1e21;
+
+}
+.text-link a:hover{
+    text-decoration: underline;
+}
+
+
+.login-block {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-wrapper{
+    width: 396px;
+    
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background: #FFFFFF;
+    width: 100%;
+}
+
+.input-email,
+.input-password {
+    margin-bottom: 10px;
+    padding:14px  16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Плавное изменение цвета границы при наведении */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+    width: 364px;
+}
+
+.line{
+    height: 1px;
+    border-bottom: 1px solid #dddfe2;
+    margin-top: 20px;
+}
+
+.login-block form input:focus{
+    border: 1px solid #1b74e4;
+    caret-color: #1b74e4;
+}
+
+button.blue-button {
+    width: 100%;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 16px;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) , 200ms cubic-bezier(.08,.52,.52,1) , 200ms cubic-bezier(.08,.52,.52,1) ;
+    cursor: pointer;
+}
+
+a.forgot-password {
+    color: #1877f2;
+    text-decoration: none;
+    margin-top: 16px;
+    display: block;
+    font-size: 14px;
+    
+    transition: color 0.3s ease; /* Плавное изменение цвета текста при наведении */
+}
+
+a.forgot-password:hover {
+    text-decoration: underline; /* Подчеркивание при наведении на "Забыли пароль?" */
+    color: #1877f2; /* Голубой цвет при наведении */
+}
+
+button.signup-button {
+    background-color: #42b72a;;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 14px;
+}
+
+
+button.signup-button:hover {
+    background-color: #338922;
+}
+
+footer{
+    padding-bottom: 20px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+footer a{
+    color: #8a8d91;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer .line{
+    margin: 10px 0;
+}
+
+.footer__links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__links a{
+    margin-right: 20px;
+
+    line-height: 20px;
+}
+
+.meta{
+    color: #737373;
+    margin-top: 30px;
+    font-size: 11px;
+}
+
+
+
+
+

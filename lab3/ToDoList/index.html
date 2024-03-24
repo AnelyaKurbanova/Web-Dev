@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To-Do List</title>
+
+    <style>
+
+    ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 20px 8px 20px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    }   
+
+    ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    } 
+
+
+    ul li.checked::before{
+        background-image: url(images/checked2.jpg);
+
+    }
+    </style>
+
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="todo">
+            <h2>ToDo List <img src="images/icon3.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button> <!-- добавляем функцию которую будем использоватьт в джс -->
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li >Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
