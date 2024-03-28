@@ -1,0 +1,35 @@
+.product_wrapper{
+    display: flex;
+    justify-content: space-between;
+
+}
+.product_info{
+    display: flex;
+    align-items: center;
+    width: 505px;
+    padding: 20px 40px;
+}
+h2{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.product_interface{
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+input{
+    border: none;
+    border-radius: 16px;
+    height: 24px;
+}

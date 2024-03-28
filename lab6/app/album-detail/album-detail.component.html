@@ -1,0 +1,30 @@
+<div class="container">
+    
+    <div class="product_wrapper">
+
+        <div class="product_info">
+            
+            <div *ngIf = "album; else loading">
+                <h2>TITLE: {{album.title}}</h2>
+            </div>
+            
+            <ng-template #loading>
+                <p>Loading...</p>
+            </ng-template> 
+        </div>
+        
+        <div class="btn-back">
+            <button [routerLink]="['/albums']" >Back</button>
+        </div>
+
+
+    </div>
+    
+    <div class="product_interface">
+        <label for="title">Update title:</label>
+        <input id = "title" type = "text" [(ngModel)]="updatedTitle"><br>
+        <button (click)="updateTitle()">Update title</button><br>
+    </div>
+
+    <button [routerLink]="['/albums', album.id, 'photos']" (click) = "getPhotosById(album.id)">Photos</button>
+</div>

@@ -1,0 +1,21 @@
+<div class="container" >
+    <div class="photos-list" *ngIf = "photos;else loading">
+        <ul>
+            <li *ngFor="let photo of photos">
+                <img [src]="photo.thumbnailUrl" [alt] = "photo.title">
+                <p>{{photo.title}}</p>
+            </li>
+        </ul>
+        <div class="btn-back">
+            <button [routerLink]="['/albums', albumId]" >Back</button>
+        </div>
+        
+    </div>
+    <ng-template #loading>
+        <p>Loading...</p>
+    </ng-template> 
+</div>
+
+
+
+

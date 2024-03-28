@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+        font-family: 'Roboto', Arial, sans-serif;
+        color: #3d3028;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin: 0;
+        padding: 0;
+      
+}
+a{
+    color: #3f2222;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover{
+    color: #666;
+    opacity: 0.5;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 20px;
+   
+}
+
+
+
+
+nav{
+    height: 4rem;
+    background-color: rgb(230, 220, 208);
+    -webkit-box-shadow: 7px 12px 21px 4px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 7px 12px 21px 4px rgba(34, 60, 80, 0.2);
+box-shadow: 7px 12px 21px 4px rgba(34, 60, 80, 0.2);
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 400px;
+    font-size: 36px;
+    
+    
+    
+}
+
+.btn-back{
+    padding-top: 20px;
+
+}
+.btn-back button{
+    color: #333;
+    padding: 0.2rem 1.3rem;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+   
+}
+
+.btn-back button:hover{
+    color: #666;
+    opacity: 0.5;
+}
+
+
+
+p{
+    display: block;
+    margin-block-start: 5em;
+    margin-block-end: 1em;
+    margin-inline-start: 415px;
+    margin-inline-end: 300px;
+    font-size: 48px;
+    text-shadow: 8px 8px 8px rgb(114, 109, 104);
+   
+}
+
+body{
+    background-image: url(https://celes.club/uploads/posts/2022-06/1654280511_34-celes-club-p-totoro-oboi-na-rabochii-stol-krasivie-38.jpg);
+    
+/* 
+     background-image: url(https://wallpaperaccess.com/full/7330269.jpg); */
+    background-size: 1487px 780px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.data-source{
+    color: #333;
+    padding: 0.2rem 1.3rem;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+}

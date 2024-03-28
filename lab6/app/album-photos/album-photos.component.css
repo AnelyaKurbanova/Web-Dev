@@ -1,0 +1,13 @@
+li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.photos-list{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    margin: 0;
+}

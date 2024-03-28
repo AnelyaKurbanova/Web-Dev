@@ -1,0 +1,18 @@
+<fieldset>
+    <div class="wrap">
+        <label for="title">Title:</label>
+    <input id = "title" type = "text" [(ngModel)] = "newAlbum.title">
+    </div><br>
+    <button (click)="addAlbum()">Add album</button>
+</fieldset>
+
+
+<ul class="data-source" *ngIf = "albums; else loading">
+    <li *ngFor="let album of albums; let idx = index">
+        <a [routerLink]="['/albums', album.id]" >{{idx +1}} {{album.title}}</a>
+        <button  (click)="deleteAlbum(album.id)">X</button>
+    </li>
+</ul>
+<ng-template #loading>
+    <p>Loading...</p>
+</ng-template>

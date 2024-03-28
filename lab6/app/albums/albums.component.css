@@ -1,0 +1,47 @@
+.data-source li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-source li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
+fieldset label{
+    font-size: 36px;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+fieldset input{
+    border: none;
+    border-radius: 16px;
+    height: 24px;
+}
+
+fieldset button{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
