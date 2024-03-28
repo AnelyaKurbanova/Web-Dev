@@ -1,5 +1,2 @@
-def cigar_party(cigars, is_weekend):
-    if is_weekend:
-      return cigars >= 40
-    else:
-        return 40 <= cigars <= 60
+def make_bricks(small, big, goal):
+    return goal % 5 <= small and goal - (big * 5) <= small
