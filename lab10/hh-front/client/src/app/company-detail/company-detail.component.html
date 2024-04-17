@@ -1,0 +1,29 @@
+<div *ngIf="company">
+    <h3>Name:</h3>
+    {{company.name}}
+
+    <h3>Description</h3>
+    {{company.desc}}
+
+    <h3>City</h3>
+    {{company.city}}
+
+    <h3>Address</h3>
+    {{company.address}}
+</div>
+
+<div *ngIf="vacancies">
+    <h3>Vacancies:</h3>
+    <ol *ngFor="let vacancy of vacancies">
+        <li>
+            <h4>{{vacancy.name}}:</h4>
+            <ul>
+                Description: {{vacancy.desc}}
+            </ul>
+            <ul>
+                Salary: {{vacancy.salary}}
+            </ul>
+
+        </li>
+    </ol>
+</div>
