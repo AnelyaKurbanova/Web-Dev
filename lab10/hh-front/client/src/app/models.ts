@@ -1,14 +1,14 @@
 export interface Company {
     id:number;
     name:string;
-    desc:string;
+    description:string;
     city:string;
     address:string;
 }
 
 export interface Vacancy{
     id:number;
-    desc: string;
+    description: string;
     name:string;
     salary:number;
 }

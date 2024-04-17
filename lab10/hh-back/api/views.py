@@ -1,12 +1,17 @@
 from rest_framework import generics
-
+from rest_framework.decorators import api_view
 from api.models import Company, Vacancy
 from api.serializers import CompanySerializer, VacancySerializer
+from rest_framework.response import Response
+from rest_framework import status
 
 
-class GenericCompanyList(generics.ListAPIView):
-    queryset = Company.objects.all()
-    serializer_class = CompanySerializer
+@api_view(['GET'])  # Ensures that the view accepts only GET requests
+def get_company_list(request):
+    if request.method == 'GET':
+        companies = Company.objects.all()
+        serializer = CompanySerializer(companies, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 class GenericCompanyDetail(generics.RetrieveAPIView):

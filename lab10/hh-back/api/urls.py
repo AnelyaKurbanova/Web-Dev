@@ -1,11 +1,11 @@
 from django.urls import path
 
-from api.views import GenericCompanyList, GenericCompanyDetail, GenericVacancyList, \
-    GenericVacancyDetail, GenericCompanyVacancies, GenericTopVacancies
+from api.views import  GenericCompanyDetail, GenericVacancyList, \
+    GenericVacancyDetail, GenericCompanyVacancies, GenericTopVacancies, get_company_list
 
 app_name = 'api'
 urlpatterns = [
-    path('companies/', GenericCompanyList.as_view(), name='company_list'),
+    path('companies/', get_company_list, name='company_list'),
     path('companies/<int:pk>/', GenericCompanyDetail.as_view(), name='company_detail'),
     path('companies/<int:pk>/vacancies/', GenericCompanyVacancies.as_view(), name='company_vacancy_list'),
     path('vacancies/', GenericVacancyList.as_view(), name='vacancy_list'),
